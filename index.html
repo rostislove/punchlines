@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -11,180 +12,231 @@
     <title>Punchlines</title>
   </head>
   <body>
-    <div class="wrapper">
-      <nav class="menubar">
-        <div class="logo">
-          <img src="img/logo_v2.png" alt="">
-        </div>
-        <ul class="navigation col_1">
-          <li><a href="#whatIs">Что такое панчлайн?</a></li>
-          <li><a href="#best">Подборка лучшего</a></li><br>
-        </ul>
-        <ul class="navigation col_2">
-          <li><a href="#test">Пройти тест</a></li>
-          <li><a href="#getInTouch">Обратная связь</a></li>
-        </ul>
-      </nav>
-
-      <section>
-        <div class="card card_punch">
-          <div class="card__text">
-            <p class="author">
-              oxxxymiron <br>
-              / <br>
-              тентакли
-            </p>
-            <p class="punch">
-              Лицо в доме напротив в белой рамке стеклопакета,
-              как полароид
-            </p>
-            <div class="social_btn">
-              <i>like</i>
-              <i>share</i>
+    <div class="menu">
+      <div class="wrapper">
+        <nav class="menubar">
+          <div class="menu_left">
+            <div class="logo">
+              <img src="img/logo_black.png" alt="">
+            </div>
+            <ul class="navigation">
+              <li><a href="">Что такое панчлайн?</a></li>
+              <li><a href="">О проекте</a></li>
+              <li><a href="">Обратная связь</a></li>
+            </ul>
+          </div>
+          <div class="menu_right">
+            <div class="search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="account">
+              <a href="">Войти</a>
             </div>
           </div>
-        </div>
-        <div class="card card_punch">
-          <div class="card__text">
-            <p class="author">
-              oxxxymiron <br>
-              / <br>
-              лондон против всех
-            </p>
-            <p class="punch">
-              Ваши лица слишком даже для картины Босха, Флоу малокалорийный, как диета Новодворской
-            </p>
-            <div class="social_btn">
-              <i>like</i>
-              <i>share</i>
-            </div>
-          </div>
-        </div>
-        <div class="card card_punch">
-          <div class="card__text">
-            <p class="author">
-              oxxxymiron <br>
-              / <br>
-              спонтанное самовозгарание
-            </p>
-            <p class="punch">
-              Каждый просит фит, каждый пишет — денег дам; Вас миллион, но мой кумир — Гриша Перельман.
-            </p>
-            <div class="social_btn">
-              <i>like</i>
-              <i>share</i>
-            </div>
-          </div>
-        </div>
+        </nav>
 
-        <div class="card card_test" id="test">
-          <div class="card__text">
-            <p class="author">
-              тест
-            </p>
-            <p class="test_text">
-              Проверь насколько хорошо ты знаешь панчлайны?
-            </p>
-            <a href="" class="btn">пройти тест</a>
-          </div>
-        </div>
-
-        <div class="card card_punch">
-          <div class="card__text">
-            <p class="author">
-              oxxxymiron <br>
-              / <br>
-              спонтанное самовозгарание
-            </p>
-            <p class="punch">
-              Вам поссать на меня, для вас фразы типа
-              в говне — дичь; Кошу под чёрных, пишу квадратами — Малевич
-            </p>
-            <div class="social_btn">
-              <i>like</i>
-              <i>share</i>
-            </div>
-          </div>
-        </div>
-        <div class="card card_punch">
-          <div class="card__text">
-            <p class="author">
-              oxxxymiron <br>
-              / <br>
-              спонтанное самовозгарание
-            </p>
-            <p class="punch">
-              Ваши лица слишком даже для картины Босха, Флоу малокалорийный, как диета Новодворской
-            </p>
-            <div class="social_btn">
-              <i>like</i>
-              <i>share</i>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card_best" id="best">
-          <div class="left"></div>
-          <div class="card__text">
-
-            <p class="author">
-              oxxxymiron
-            </p>
-            <p class="punch">
-              Подборка лучших панчей
-              с альбома Горгород
-            </p>
-            <a href="" class="btn">перейти к материалу</a>
-          </div>
-        </div>
-
-        <div class="card card_getInTouch" id="getInTouch">
-          <div class="card__text">
-            <p class="author">
-              обратная свзяь
-            </p>
-            <form action="">
-              <h2>Присылайте свои панчи</h2>
-              <input type="text" placeholder="имя" id="name" name="name">
-              <input type="text" placeholder="панчлайн" id="punchline" name="punchline" value="">
-              <button type="button" name="button">отправить</button>
-            </form>
-            <a href="">что такое панчлайн?</a>
-          </div>
-        </div>
-
-        <div class="card card_what" id="whatIs">
-          <div class="card__text">
-            <p class="author">
-              что такое панчлайн?
-            </p>
-            <p class="punch">
-              панчлайн — ударная строка, которая является кульминацией предыдущей мысли.
-              часто строится на метафоре, но не менее важна рифма и игра слов. приемущественно используются в баттлах
-            </p>
-            <a href="" class="btn">пройти тест</a>
-          </div>
-        </div>
-
-        <div class="card card_about">
-          <div class="card__text">
-            <p class="author">
-              о проекте
-            </p>
-            <p class="punch">
-              проект разработан в рамках <br>
-              учебного курса по арт-практике
-            </p>
-            <p>
-              студент: тян ростислав <br>
-              куратор: день захар
-            </p>
-            <img src="img/hse.png" alt="">
-          </div>
-        </div>
-
-      </section>
+      </div>
     </div>
 
+    <nav class="sort">
+      <!-- <h1>Сортировка</h1> -->
+      <div class="control">
+        <a href="" class="active">Исполнители</a>
+        <a href="">События</a>
+      </div>
+      <div class="sub_list">
+        <ol class="sub_content">
+          <li><a href="">Oxxxymiron</a></li>
+          <li><a href="">Гарри Топор</a></li>
+          <li><a href="">Horus</a></li>
+          <li><a href="">ST</a></li>
+          <li><a href="">Ricky F</a></li>
+          <li><a href="">Alphavite</a></li>
+          <li><a href="">Соня Мармеладова</a></li>
+          <li><a href="">Эрнесто Заткнитесь</a></li>
+          <li><a href="">Drago</a></li>
+          <li><a href="">Noize MC</a></li>
+        </ol>
+        <ol class="sub_list non-active">
+          <li><a href="">VERSUS Battle: BPM</a></li>
+          <li><a href="">VERSUS Battle: FreshBlood</a></li>
+          <li><a href="">VERSUS Battle. Основа</a></li>
+          <li><a href="">Don't Flop</a></li>
+          <li><a href="">KOTD</a></li>
+          <li><a href="">text</a></li>
+          <li><a href="">text</a></li>
+          <li><a href="">text</a></li>
+          <li><a href="">text</a></li>
+        </ol>
+      </div>
+    </nav>
+    <section class="grid">
+        <div class="second_line">
+          <div class="one_card">
+            <div class="card card-4">
+              <div class="cover">
+              </div>
+              <p class="punch">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolore neque tempora quaerat totam, nemo, at nesciunt odit iure porro ipsam! Natus a vero totam sed ipsa aliquam, accusamus praesentium.
+              </p>
+              <div class="author">
+                <div class="avatar oxxxy">
+                </div>
+                <div class="name">
+                  <p>oxxxymiron</p>
+                  <p class="source">Горгород</p>
+                </div>
+              </div>
+              <div class="social_btn">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-share" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="three_card">
+            <div class="card card-3">
+              <p class="punch">
+                Вам поссать на меня, для вас фразы типа в говне — дичь;
+                Кошу под чёрных, пишу квадратами — Малевич
+              </p>
+              <div class="author">
+                <div class="avatar oxxxy"></div>
+                <div class="name">
+                  <p>oxxxymiron</p>
+                  <p class="source">Сага об орлах и канарейках</p>
+                </div>
+              </div>
+              <!-- <p class="author">
+                oxxxymiron
+              </p> -->
+              <div class="social_btn">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-share" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="card card-1">
+              <p class="punch">
+                Ты своей милой верен, к несчастью есть у бабы рот;
+                Я, к ней придя, вернул туда деепричастный оборот
+              </p>
+              <div class="author">
+                <div class="avatar"></div>
+                <div class="name">
+                  <p>oxxxymiron</p>
+                  <p class="source">Не говори ни слова</p>
+                </div>
+              </div>
+
+              <!--
+              <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+              <i class="fa fa-share" aria-hidden="true"></i> -->
+              <div class="social_btn">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-share" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="card card-2">
+              <p class="punch">
+                Лицо в доме напротив в белой рамке стеклопакета, как полароид
+              </p>
+              <div class="author">
+                <div class="name">
+                  <p>oxxxymiron</p>
+                  <p class="source">Тентакли</p>
+                </div>
+              </div>
+              <div class="social_btn">
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="first_line">
+          <div class="three_card">
+            <div class="card card-1">
+              <p class="punch">
+                Ваши лица слишком даже для картины Босха, Флоу малокалорийный, как диета Новодворской
+              </p>
+              <div class="author">
+                <div class="avatar"></div>
+                <div class="name">
+                  <p>oxxxymiron</p>
+                  <p class="source">Лондон против всех</p>
+                </div>
+              </div>
+              <div class="social_btn">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-share" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="card card-2">
+              <p class="punch">
+                Есть два типа мужика: ты и джонибой. Есть два типа мужика.
+              </p>
+              <div class="author">
+                <div class="name">
+                  <p>Alphavite</p>
+                  <p class="source">Versus Battle: FreshBlood. Эрнесто Заткнитесь vs Alphavite</p>
+                </div>
+              </div>
+              <div class="social_btn">
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="card card-3">
+              <p class="punch">
+                loreakdfj akjsdf
+              </p>
+              <div class="author">
+                <div class="avatar"></div>
+                <div class="name">
+                  <p>oxxxymiron</p>
+                  <p class="source">тентакли</p>
+                </div>
+              </div>
+              <div class="social_btn">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-share" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="one_card">
+            <div class="card card-4">
+              <p class="punch">
+                Каждый просит фит, каждый пишет — денег дам; Вас миллион, но мой кумир — Гриша Перельман.
+              </p>
+              <div class="author">
+                <div class="avatar"></div>
+                <div class="name">
+                  <p>oxxxymiron</p>
+                  <p class="source">Спонтанное самовозгорание</p>
+                </div>
+              </div>
+              <div class="social_btn">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                <i class="fa fa-share" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <div class="test">
+      <div class="test_content">
+        <div class="test_text">
+          <p>тест</p>
+          <h2>узнай насколько хорошо ты знаешь панчлайны?</h2>
+        </div>
+        <!-- <a href="">пройти тест</a> -->
+      </div>
+    </div>
   </body>
 </html>
