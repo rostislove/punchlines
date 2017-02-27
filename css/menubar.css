@@ -1,0 +1,73 @@
+/* стили для menubar */
+.menu {
+  min-height: 70px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+}
+.menubar {
+  width: 100%;
+  height: 70px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 70px;
+  vertical-align: middle;
+}
+
+.logo {
+
+}
+
+.logo a {
+  width: 250px;
+  height: 70px;
+  display: flex;
+}
+
+.logo img {
+  max-width: 100%;
+  margin: auto 0;
+}
+
+.navigation {
+  list-style: none;
+  margin-left: 50px;
+}
+.navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation li a,
+.account a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.5;
+}
+
+.navigation li a:hover,
+.account a:hover {
+  opacity: 1;
+}
+
+.menu_left {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.menu_right {
+  display: inline-flex;
+}
+
+.menu_right .search {
+  margin-right: 30px;
+}
+
+.menu_right .search i {
+  cursor: pointer;
+}
+
+.account a {
+  text-decoration: none;
+
+}

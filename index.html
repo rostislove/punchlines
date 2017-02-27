@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/openSort.js"></script>
     <script type="text/javascript" src="js/test.js"></script>
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -17,21 +18,16 @@
         <nav class="menubar">
           <div class="menu_left">
             <div class="logo">
-              <img src="img/logo_black.png" alt="">
+              <a href="#"><img src="img/logo.png" alt=""></a>
             </div>
-            <ul class="navigation">
-              <li><a href="">Что такое панчлайн?</a></li>
-              <li><a href="">О проекте</a></li>
-              <li><a href="">Обратная связь</a></li>
-            </ul>
+
           </div>
           <div class="menu_right">
-            <div class="search">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
-            <div class="account">
-              <a href="">Войти</a>
-            </div>
+            <ul class="navigation">
+              <li><a href="about.html">О проекте</a></li>
+              <li><a href="">Зарегистрироваться</a></li>
+              <li><a href="">Войти</a></li>
+            </ul>
           </div>
         </nav>
 
@@ -41,11 +37,11 @@
     <nav class="sort">
       <!-- <h1>Сортировка</h1> -->
       <div class="control">
-        <a href="" class="active">Исполнители</a>
-        <a href="">События</a>
+        <a href="" class="artists">Исполнители <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        <a href="" class="events">События <i class="fa fa-caret-down" aria-hidden="true"></i></a>
       </div>
-      <div class="sub_list">
-        <ol class="sub_content">
+      <div class="" id="sub_list">
+        <ol class="segment sub_content_1 disabled">
           <li><a href="">Oxxxymiron</a></li>
           <li><a href="">Гарри Топор</a></li>
           <li><a href="">Horus</a></li>
@@ -55,21 +51,20 @@
           <li><a href="">Соня Мармеладова</a></li>
           <li><a href="">Эрнесто Заткнитесь</a></li>
           <li><a href="">Drago</a></li>
-          <li><a href="">Noize MC</a></li>
+          <li><a href="">Redo</a></li>
+          <li><a href="">Obladaet</a></li>
+          <li><a href=""></a></li>
         </ol>
-        <ol class="sub_list non-active">
+        <ol class="segment sub_content_2 disabled">
           <li><a href="">VERSUS Battle: BPM</a></li>
           <li><a href="">VERSUS Battle: FreshBlood</a></li>
           <li><a href="">VERSUS Battle. Основа</a></li>
-          <li><a href="">Don't Flop</a></li>
-          <li><a href="">KOTD</a></li>
-          <li><a href="">text</a></li>
-          <li><a href="">text</a></li>
-          <li><a href="">text</a></li>
-          <li><a href="">text</a></li>
+          <li><a href="">Slovo SPb</a></li>
+          <li><a href="">140 BPM Battle</a></li>
         </ol>
       </div>
     </nav>
+
     <section class="grid">
         <div class="second_line">
           <div class="one_card">
@@ -232,11 +227,178 @@
     <div class="test">
       <div class="test_content">
         <div class="test_text">
-          <p>тест</p>
-          <h2>узнай насколько хорошо ты знаешь панчлайны?</h2>
+          <p>Тест</p>
+          <h2>Насколько хорошо вы знаете панчлайны?</h2>
         </div>
         <!-- <a href="">пройти тест</a> -->
       </div>
     </div>
+
+    <section class="grid">
+      <div class="second_line">
+        <div class="one_card">
+          <div class="card card-4">
+            <div class="cover">
+            </div>
+            <p class="punch">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolore neque tempora quaerat totam, nemo, at nesciunt odit iure porro ipsam! Natus a vero totam sed ipsa aliquam, accusamus praesentium.
+            </p>
+            <div class="author">
+              <div class="avatar oxxxy">
+              </div>
+              <div class="name">
+                <p>oxxxymiron</p>
+                <p class="source">Горгород</p>
+              </div>
+            </div>
+            <div class="social_btn">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="three_card">
+          <div class="card card-3">
+            <p class="punch">
+              Вам поссать на меня, для вас фразы типа в говне — дичь;
+              Кошу под чёрных, пишу квадратами — Малевич
+            </p>
+            <div class="author">
+              <div class="avatar oxxxy"></div>
+              <div class="name">
+                <p>oxxxymiron</p>
+                <p class="source">Сага об орлах и канарейках</p>
+              </div>
+            </div>
+            <!-- <p class="author">
+              oxxxymiron
+            </p> -->
+            <div class="social_btn">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card card-1">
+            <p class="punch">
+              Ты своей милой верен, к несчастью есть у бабы рот;
+              Я, к ней придя, вернул туда деепричастный оборот
+            </p>
+            <div class="author">
+              <div class="avatar"></div>
+              <div class="name">
+                <p>oxxxymiron</p>
+                <p class="source">Не говори ни слова</p>
+              </div>
+            </div>
+
+            <!--
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            <i class="fa fa-share" aria-hidden="true"></i> -->
+            <div class="social_btn">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card card-2">
+            <p class="punch">
+              Лицо в доме напротив в белой рамке стеклопакета, как полароид
+            </p>
+            <div class="author">
+              <div class="name">
+                <p>oxxxymiron</p>
+                <p class="source">Тентакли</p>
+              </div>
+            </div>
+            <div class="social_btn">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="first_line">
+        <div class="three_card">
+          <div class="card card-1">
+            <p class="punch">
+              Ваши лица слишком даже для картины Босха, Флоу малокалорийный, как диета Новодворской
+            </p>
+            <div class="author">
+              <div class="avatar"></div>
+              <div class="name">
+                <p>oxxxymiron</p>
+                <p class="source">Лондон против всех</p>
+              </div>
+            </div>
+            <div class="social_btn">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card card-2">
+            <p class="punch">
+              Есть два типа мужика: ты и джонибой. Есть два типа мужика.
+            </p>
+            <div class="author">
+              <div class="name">
+                <p>Alphavite</p>
+                <p class="source">Versus Battle: FreshBlood. Эрнесто Заткнитесь vs Alphavite</p>
+              </div>
+            </div>
+            <div class="social_btn">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card card-3">
+            <p class="punch">
+              loreakdfj akjsdf
+            </p>
+            <div class="author">
+              <div class="avatar"></div>
+              <div class="name">
+                <p>oxxxymiron</p>
+                <p class="source">тентакли</p>
+              </div>
+            </div>
+            <div class="social_btn">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="one_card">
+          <div class="card card-4">
+            <p class="punch">
+              Каждый просит фит, каждый пишет — денег дам; Вас миллион, но мой кумир — Гриша Перельман.
+            </p>
+            <div class="author">
+              <div class="avatar"></div>
+              <div class="name">
+                <p>oxxxymiron</p>
+                <p class="source">Спонтанное самовозгорание</p>
+              </div>
+            </div>
+            <div class="social_btn">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="load_more wrapper">
+      <a href="" class="btn">Загрузить еще</a>
+    </div>
+
+    <footer>
+      <div class="copyright">
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,26 @@
+body {
+  font-family: 'Formular', sans-serif;
+  background-color: #fafafa;
+  -webkit-font-smooth: antialiased;
+  font-smooth: antialiased;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+aside {
+  width: 882px;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 30px 0 15px;
+}
+
+.about {
+  
+}

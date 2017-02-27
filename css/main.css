@@ -1,6 +1,8 @@
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Formular', sans-serif;
   background-color: #fafafa;
+  -webkit-font-smooth: antialiased;
+  font-smooth: antialiased;
 }
 
 .wrapper {
@@ -8,56 +10,7 @@ body {
   margin: 0 auto;
 }
 
-/* стили для menubar */
-.menu {
-  min-height: 70px;
-  background-color: #fff;
-  border-bottom: 1px solid #e2e2e2;
-}
-.menubar {
-  width: 100%;
-  height: 70px;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  line-height: 70px;
-  vertical-align: middle;
-}
-
-.menu_left {
-  display: inline-flex;
-  flex-direction: row;
-}
-
-.logo {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-.logo img {
-  max-width: 100%;
-  margin: auto 0;
-}
-
-.navigation {
-  list-style: none;
-  margin-left: 50px;
-}
-.navigation li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.navigation li a {
-  text-decoration: none;
-  color: #000;
-  opacity: 0.8;
-}
-
-.navigation li a:hover {
-  opacity: 1;
-}
+/* стили для фильтра */
 
 .sort {
   width: 100%;
@@ -69,6 +22,7 @@ body {
 }
 
 .sort .control {
+  height: 20px;
   display: flex;
   justify-content: center;
   margin: 20px auto;
@@ -103,7 +57,7 @@ body {
   background-color: rgba(0,0,0, 0.2);
 }
 
-.sub_content {
+.segment {
   width: 940px;
   display: inline-flex;
   flex-direction: row;
@@ -111,8 +65,8 @@ body {
   margin: 10px;
 }
 
-.sort .sub_list .sub_content a {
-  padding: 0 10px;
+.sort .sub_list .segment a {
+  padding: 5px 10px;
   margin-right: 0px;
   font-size: 14px;
   line-height: 18px;
@@ -121,7 +75,7 @@ body {
   border-radius: 20px;
 }
 
-.sort .sub_list .sub_content a:hover {
+.sort .sub_list .segment a:hover {
   border: none;
   color: #fff;
   background-color: rgba(0,0,0, .8);
@@ -131,24 +85,17 @@ body {
   display: none;
 }
 
+.disabled {
+  display: none;
+}
+
 .sort ol li {
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right: 15px;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
-.menu_right {
-  display: inline-flex;
-}
-
-.menu_right .search {
-  margin-right: 30px;
-}
-
-.menu_right .search i {
-  cursor: pointer;
-}
 
 /* стили для grid */
 .grid {
@@ -318,9 +265,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.disabled {
-  display: none;
-}
+
 
 .test_content {
   text-align: center;
@@ -331,30 +276,29 @@ body {
 }
 
 .test_content h2 {
-  font-size: 32px;
-  padding: 70px 0 50px;
-}
-.test_content a {
-  width: 140px;
-  height: 40px;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
+  width: 600px;
+  font-size: 42px;
+  padding: 50px 0 50px;
 }
 
-.test_content a:hover {
-  background-color: rgba(0, 0, 0, .2);
+.test_text p::after {
+  display: block;
+  content: "";
+  width: 100px;
+  margin: 20px auto 0;
+  height: 1px;
+  background-color: #fff;
 }
 
 #questblock {
-  width: 600px;
+  width: 650px;
   margin: 0 auto;
 }
 
 #quest {
   display: block;
-  font-size: 24px;
+  font-size: 28px;
+  line-height: 30px;
   padding-bottom: 70px;
 }
 .answers {
@@ -365,10 +309,10 @@ body {
   padding: 0;
 }
 .answer {
-  width: 300px;
-  margin: 20px 0px;
+  width: 325px;
+  margin: 20px auto;
   text-align: left;
-  font-size: 18px;
+  font-size: 21px;
 }
 .answer label {
   cursor: pointer;
@@ -379,18 +323,18 @@ body {
 }
 .answer label::before {
   position: absolute;
-  left:-23px;
+  top: 2px;
+  left: -23px;
   content: "\f10c";
-  width: 18px;
-  height: 18px;
-  margin: 1px;
-  font-size: 20px;
+  width: 21px;
+  height: 21px;
+  font-size: 21px;
   color: #fff;
   font-family: FontAwesome;
 }
 .answer input[type="radio"]:checked + label::before {
   content: "\f05d";
-  font-size: 20px;
+  font-size: 21px;
 }
 
 #radio {
@@ -399,6 +343,17 @@ body {
 
 #run,
 #next {
+  width: 190px;
+  height: 55px;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #181818;
+  cursor: pointer;
+}
+
+ {
   width: 140px;
   height: 40px;
   padding: 10px 15px;
@@ -464,4 +419,33 @@ body {
   width: 250px;
   height: 1px;
   background-color: #fff;
+}
+
+.load_more {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.load_more a {
+  display: block;
+  width: 1202px;
+  height: 40px;
+  padding: 10px 0;
+
+  color: #181818;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+}
+
+.load_more a:hover {
+  background-color: #e6e4e1;
+  border: 1px solid #cccccc;
 }
