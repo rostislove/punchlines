@@ -119,10 +119,15 @@ nav ul li {
 @media only screen and (max-width : 768px) {
   header {
     z-index: 1;
+    min-height: 3rem;
     position: fixed;
   }
   .wrapper {
-    padding: 4rem 0;
+    padding: 3rem 0;
+  }
+  nav ul {
+    min-height: 3rem;
+    font-size: 0.9rem;
   }
   .item {
     padding: 1.5rem;
