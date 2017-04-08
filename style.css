@@ -96,7 +96,10 @@ p, span {
 /* iPads (landscape) ----------- */
 @media only screen and (max-width : 768px) {
   * {
-    margin: 0.2rem;
+    margin: 0.5rem 0.2rem;
+  }
+  .item {
+    padding: 1.5rem;
   }
   .punchline {
     font-size: 1.6em;
